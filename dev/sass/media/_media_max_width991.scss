@@ -3,15 +3,39 @@
         padding-left: 20px;
         padding-right: 20px;
     }
-    .container {
-        padding-left: 18px;
-        padding-right: 18px;
+    .navbar {
+        padding-top: 16px;
+        padding-bottom: 18px;
     &-brand {
         img {
             max-width: 126px;
      }
     }
+    &-collaps {
+        display: flex;
+        flex-direction: column;
+        background-color: $bg-secondary;
+        margin: 0 -20px;
+        padding: 0 40px;
+        transform: translate(0, 15px);
+    }
+    &-nav {
+        padding-top: 37px 0 34px;
+    }
+    a {
+        padding: 0 0 11px;
+        font-size: 24px;
+        line-height: 222%;
+    }
+    .btn {
+        padding: 22px 26px;
+        margin: 0 auto 60px;
+        width: 100%;
+        max-width: 295px;
+        justify-content: center;
+    }
 }
+
 }
 
 
