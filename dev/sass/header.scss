@@ -1,8 +1,99 @@
-header{
-	height: 7vh;
-	padding: 15px 0;
-	background: #222;
-	a {
-		color: #fff;
+header {
+	
+	background-color: #282B38;
+
+}
+
+
+.navbar {
+	padding-top: 25px;
+	padding-bottom: 39px;
+	&-brand {
+		padding-top: 0;
+		padding-bottom: 0;
 	}
+
+	.navbar-nav {
+		margin: 0 auto;
+		flex-direction: row;
+		max-width: 647px;
+		width: 100%;
+		justify-content: space-around;
+		padding-top: 5px;
+		a {
+			color: #fff;
+			&:hover {
+				color: $color-secondary
+			}
+		}
+	}
+}
+
+.btn-primary {
+	color: #fff;
+    background-color: #E58D35
+	
+	
+}
+
+.btn {
+		border: 1px solid transparent;
+	    border-radius: 25px;
+		margin-left: 16px;
+		padding: 13px 26px;
+		letter-spacing: 0;
+	}
+
+	.navbar-toggler {
+		padding: 4px;
+		&:focus{
+			box-shadow: none;
+		}
+
+		.navbar-toggler-icon {
+			width: 27.5px;
+			height: 2.5px;
+			background-color: #fff;
+			position: absolute;
+			left: 11px;
+			top: 19px;
+			transition: .3s;
+			&::before, &::after {
+				content:"";
+				width: 27.5px;
+			    height: 2.5px;
+			    background-color: #fff;
+			    display: inline-block;
+			    position: absolute;
+			    left: 50%;
+			    transform: translate(-50%);
+			    top: -11px;
+				transition: .3s;
+
+			}
+			&::before {
+				top: initial;
+				bottom: -11px;
+
+			}
+
+		
+
+		&[aria-expanded="false"] {
+
+		}
+		&[aria-expanded="true"] {
+			.navbar-toggler-icon {
+				background-color: transparent;
+			
+			&::before {
+				transform: translate(-14px, -11px) rotate(-45deg);
+
+		}
+		   &::after {
+			    transform: translate(14px, 11px) rotate(45deg);
+		   }
+		}
+	}
+}
 }
